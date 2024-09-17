@@ -1,2 +1,3 @@
 # Webstore
-Template for a webstore
+Webstore i made to learn next.js
+
