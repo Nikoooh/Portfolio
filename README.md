@@ -1,3 +1,3 @@
 # Webstore
-Webstore i made to learn next.js
+Webstore i'm making to learn next.js
 
