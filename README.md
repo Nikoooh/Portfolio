@@ -1,3 +1,4 @@
-# Webstore
-Webstore i'm making to learn next.js
+# Portfolio app
+
+Portfolio to display my personal projects and tech stack
 
