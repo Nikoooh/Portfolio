@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes hide {
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes underline-collapse-expand {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 0%;
+    left: 0;
+  }
+  100% {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5634628851540616) 0%, rgba(109,97,187,1) 22%, rgba(72,0,255,0.7035189075630253) 69%);
+    box-shadow: 1px 2 2 black;
+    width: 100%;
+    left: 0;
+  }
+}
+
+.typing {
+  font-size: 1.75rem;
+  font-family: var(--font-alegreya);
+  font-style: italic;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+  position: relative;
+  animation-delay: 1s; 
+}
+
+.finished {
+  border: none;
+}
+
+.text-typing {
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.text-typing::after {
+  content: '';
+  position: absolute;
+  bottom: 2px; /* Adjust this to change the distance of the underline */
+  left: 0;
+  height: 3px;
+  border-radius: 16px;
+  width: 100%;
+  animation: underline-collapse-expand 2s ease 3s forwards; /* Starts after typing finishes */
+}
