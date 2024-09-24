@@ -35,7 +35,7 @@ const HomePage: React.FC = (): JSX.Element => {
       </div>
       <div className="flex md:flex-row flex-col justify-center p-8 pb-10 text-black">
         <div className="p-14 sm:w-1/3">
-          <Image src={'/pic.png'} width={250} height={250} alt="Picture of Me" className="rounded-full"/>
+          <Image src={'/temppic.png'} width={250} height={250} alt="Picture of Me" className="rounded-full"/>
         </div>
         <div className="py-14 sm:w-1/3">
           <p className="text-4xl mb-4">Who am <a className="text-red-500 italic">I?</a></p>
