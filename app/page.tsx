@@ -14,25 +14,25 @@ const HomePage: React.FC = (): JSX.Element => {
 
     return () => clearTimeout(timer)
   }, [])
-
-  console.log(className);
-  
   
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row justify-center gap-10 p-8">
-        <div className="py-32 sm:w-1/3">
-          <div className="p-10 w-fit">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 p-8 bg-hero-image bg-cover bg-center min-h-[90vh]">
+
+        <div className="flex flex-col justify-center items-center py-32 sm:w-1/3">     
+          <div className="p-10 w-fit text-white">
             <p className="text-6xl">Niko Toivanen</p>
             <div className="text-typing">
               <div><p className={`typing ${className} pr-1`}>Fullstack Developer</p></div>              
             </div>         
           </div>     
         </div>
-        <div className="sm:py-20 sm:w-1/3">
-          <Image src={'/programmer.png'} width={400} height={400} alt="vector graphic of an programmer" />
+
+        <div className="flex justify-center items-center sm:py-20 sm:w-1/3">
+          <Image src={'/moon_developer-preview.png'} width={400} height={400} alt="vector graphic of an programmer" />
         </div>
       </div>
+
       <div className="flex md:flex-row flex-col justify-center p-8 pb-10 text-black">
         <div className="p-14 sm:w-1/3">
           <Image src={'/noimage.webp'} width={270} height={270} alt="Picture of Me" className="rounded-full"/>
@@ -52,7 +52,7 @@ const HomePage: React.FC = (): JSX.Element => {
               <span className="rounded-full ml-1 mr-1 py-0.5 px-3 bg-yellow-200 outline outline-1 outline-yellow-300 bg-opacity-60 italic">Java-</span> 
               and
               <span className="rounded-full ml-1 px-3 py-0.5 bg-blue-200 outline  outline-1 outline-sky-500 bg-opacity-60 italic">Typescript</span>.
-              I also have some Python skills, but i am not quite proficent with it.
+              I also have some Python skills, but i would not call myself proficent with it.
             </p>
             <p className="mt-3">I prefer to develope applications with modern Javascript frameworks like React and Next.js.</p>
           </div>       

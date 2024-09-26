@@ -42,7 +42,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
           <div className="mb-5">
             <p className="text-xl">Accounting App</p>
           </div>
-          <div className="ring mb-3">
+          <div className="flex justify-center ring mb-3 shadow-xl ">
             <img src="/AppImages/noimage.png" alt="no image available picture" width='full' height='auto'/>
           </div>
           <div className="flex flex-row flex-wrap gap-2 mb-8">         
