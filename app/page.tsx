@@ -25,7 +25,7 @@ const HomePage: React.FC = (): JSX.Element => {
           <div className="p-10 w-fit">
             <p className="text-6xl">Niko Toivanen</p>
             <div className="text-typing">
-              <div><p className={`typing ${className}`}>Fullstack Developer</p></div>              
+              <div><p className={`typing ${className} pr-1`}>Fullstack Developer</p></div>              
             </div>         
           </div>     
         </div>
@@ -35,12 +35,13 @@ const HomePage: React.FC = (): JSX.Element => {
       </div>
       <div className="flex md:flex-row flex-col justify-center p-8 pb-10 text-black">
         <div className="p-14 sm:w-1/3">
-          <Image src={'/temppic.png'} width={250} height={250} alt="Picture of Me" className="rounded-full"/>
+          <Image src={'/noimage.webp'} width={270} height={270} alt="Picture of Me" className="rounded-full"/>
+          <p>Image to be added</p>
         </div>
         <div className="py-14 sm:w-1/3">
           <p className="text-4xl mb-4">Who am <a className="text-red-500 italic">I?</a></p>
           <div className="text-lg p-5">
-            <p className="mb-3">I am 23-year old currently studying software development at South-Eastern Finland University of Applied Scieneces (XAMK).</p>
+            <p className="mb-3">I am 23-year old currently studying software development at South-Eastern Finland University of Applied Sciences (XAMK).</p>
             <p>Things i Enjoy:</p>
             <ul className="list-disc">
               <li className="ml-8">Programming</li>

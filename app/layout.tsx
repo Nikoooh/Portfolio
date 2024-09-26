@@ -38,6 +38,12 @@ export default function RootLayout({
                     </li>
                   </Link>
 
+                  <Link href={'/projects'}>
+                    <li className="hover:animate-pulse cursor-pointer text-xl">
+                      Projects
+                    </li>
+                  </Link> 
+
                   <Link href={'/contact'}>
                     <li className="hover:animate-pulse cursor-pointer text-xl">
                       Contact
