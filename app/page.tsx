@@ -17,25 +17,22 @@ const HomePage: React.FC = (): JSX.Element => {
   
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 p-8 bg-hero-image bg-cover bg-center min-h-[90vh]">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 p-8 bg-hero-image bg-cover bg-top min-h-[100vh]">
 
-        <div className="flex flex-col justify-center items-center py-32 sm:w-1/3">     
-          <div className="p-10 w-fit text-white">
+        <div className="flex flex-col justify-center items-center py-32 w-fit">     
+          <div className="p-16 w-fit text-white bg-zinc-800 bg-opacity-30 rounded-full shadow-2xl">
             <p className="text-6xl">Niko Toivanen</p>
             <div className="text-typing">
               <div><p className={`typing ${className} pr-1`}>Fullstack Developer</p></div>              
             </div>         
           </div>     
         </div>
-
-        <div className="flex justify-center items-center sm:py-20 sm:w-1/3">
-          <Image src={'/moon_developer-preview.png'} width={400} height={400} alt="vector graphic of an programmer" />
-        </div>
+        <div className="sm:w-1/3" />
       </div>
 
       <div className="flex md:flex-row flex-col justify-center p-8 pb-10 text-black">
         <div className="p-14 sm:w-1/3">
-          <Image src={'/noimage.webp'} width={270} height={270} alt="Picture of Me" className="rounded-full"/>
+          <Image src={'/vectors/noimage.webp'} width={270} height={270} alt="Picture of Me" className="rounded-full"/>
           <p>Image to be added</p>
         </div>
         <div className="py-14 sm:w-1/3">

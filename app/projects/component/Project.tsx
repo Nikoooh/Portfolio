@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import colorClasses from "@/app/styles/colorClasses"
+import colorClasses from "../../styles/colorClasses"
+import Link from "next/link"
+import { AppInfo } from "@/types/types"
 
 interface Tech {
   name: string
@@ -7,25 +9,17 @@ interface Tech {
   color: string
 }
 
-interface AppInfo {
-  appName: string
-  paragraphOne: string
-  paragraphTwo: string
-  img?: {width: string, height: string} 
-}
-
 interface Props {
   app: AppInfo
   tech: Tech[]
   imgSrc: string,
-  
 }
 
 const Project: React.FC<Props> = ({app, tech, imgSrc}): JSX.Element => {
   return (
     <div className="flex flex-col p-2 sm:w-1/2 md:w-1/3">
       <div className="mb-5">
-        <p className="text-2xl">{app.appName}</p>
+        <p className="text-2xl underline"><Link href={app.githubUrl} target="_">{app.appName}</Link></p>
       </div>
       <div className="mb-4 shadow-xl outline outline-3 outline-zinc-200 flex justify-center">
         <img src={imgSrc} alt="screenshot of pokedex app" width={app.img?.width ? `${app.img.width}` : 'auto'} height={app.img?.height ? `${app.img.height}` : 'auto'} />

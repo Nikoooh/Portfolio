@@ -7,13 +7,13 @@ import { pokedex, pokedexTech, bloglist, bloglistTech, pathfinder, pathfinderTec
 const ProjectsPage: React.FC = (): JSX.Element => {
   return (
     <div className="flex flex-col pb-8">
-      <div className="flex flex-col md:flex-row justify-center gap-10 p-8">
-        <div className="py-32 px-20 md:w-1/3">
+      <div className="flex flex-col md:flex-row justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh]">
+        <div className="py-32 px-20 md:w-1/3 text-white">
           <p className="text-6xl mb-4">Projects</p>
-          <p className="text-2xl">Some apps i&apos;ve made</p>
+          <p className="text-2xl">Some apps i have made</p>
         </div>
         <div className="sm:py-20 md:w-1/3">
-          <img src={'/skills_page.png'} width='400px' height="auto" alt="vector art of an programmer" />
+          <img src={'/vectors/moon_developer-2.png'} width='400px' height="auto" alt="vector art of an programmer" />
         </div>
       </div>
 
@@ -31,7 +31,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
       </div>
       
       <div className="text-center p-12 mb-6">
-        <p className="text-4xl">More can be found on my personal <span className="underline text-blue-200"><Link href="https://github.com/Nikoooh" target="_">GitHub</Link></span></p>  
+        <p className="text-4xl">More can be found on my personal <span className="underline text-blue-800"><Link href="https://github.com/Nikoooh" target="_">GitHub</Link></span></p>  
       </div>
 
       <div className="flex flex-row justify-center gap-12">

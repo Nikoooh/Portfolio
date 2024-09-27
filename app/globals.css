@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
 
 @layer utilities {
   .text-balance {
@@ -83,4 +93,9 @@
   border-radius: 16px;
   width: 100%;
   animation: underline-collapse-expand 2s ease 3s forwards; /* Starts after typing finishes */
+}
+
+.footerGradient {
+  background: rgb(2,0,36);
+  background: linear-gradient(258deg, rgba(2,0,36,0.5634628851540616) 0%, rgba(127,93,196,1) 21%, rgba(38,19,112,0.8295693277310925) 71%);
 }

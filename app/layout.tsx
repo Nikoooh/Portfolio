@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
@@ -17,46 +18,57 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${alegreya.className} antialiased text-black`}>
-        <div>
-          <nav className="bg-transparent absolute top-0 left-0 w-full z-10 text-white">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-              <a className="flex items-center space-x-3 rtl:space-x-reverse">
-                  <span className="self-center text-3xl whitespace-nowrap">Portfolio * Niko Toivanen</span>
-              </a>
-              <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul className="flex gap-4">
-                  <Link href={'/'}>
-                    <li className="hover:animate-pulse cursor-pointer text-xl">
-                      Home
-                    </li>
-                  </Link>
+      <body className={`${alegreya.className} antialiased`}>
+        <div className="flex flex-col h-screen justify-between">
+          <div>
+            <nav className="bg-transparent absolute top-0 left-0 w-full z-10 text-white">
+              <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span className="self-center text-4xl whitespace-nowrap">Portfolio</span>
+                </a>
+                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                  <ul className="flex gap-4">
+                    <Link href={'/'}>
+                      <li className="cursor-pointer text-xl hover:underline">
+                        Home
+                      </li>
+                    </Link>
 
-                  <Link href={'/skills'}>
-                    <li className="hover:animate-pulse cursor-pointer text-xl">
-                      Skills
-                    </li>
-                  </Link>
+                    <Link href={'/skills'}>
+                      <li className="cursor-pointer text-xl hover:underline">
+                        Skills
+                      </li>
+                    </Link>
 
-                  <Link href={'/projects'}>
-                    <li className="hover:animate-pulse cursor-pointer text-xl">
-                      Projects
-                    </li>
-                  </Link> 
+                    <Link href={'/projects'}>
+                      <li className="cursor-pointer text-xl hover:underline">
+                        Projects
+                      </li>
+                    </Link> 
 
-                  <Link href={'/contact'}>
-                    <li className="hover:animate-pulse cursor-pointer text-xl">
-                      Contact
-                    </li>
-                  </Link>              
-                </ul>
+                    <Link href={'/contact'}>
+                      <li className="cursor-pointer text-xl hover:underline">
+                        Contact
+                      </li>
+                    </Link>              
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
-        </div>
+            </nav>
+          </div>
 
-        {children}
-               
+          <div>
+            {children}
+          </div>
+
+          <footer>
+            <div className="flex flex-row justify-center gap-60 p-4 footerGradient text-white">
+              <p className="text-xl">Developed by Niko Toivanen</p>
+              <p className="text-xl">Copyright &copy; Niko Toivanen</p>
+              <Link href='https://github.com/Nikoooh' target="_"><img src="/techLogos/githubLogo.png" width={30} height='auto' alt="github logo"/></Link>
+            </div>         
+          </footer>
+        </div>
       </body>
     </html>
   );
