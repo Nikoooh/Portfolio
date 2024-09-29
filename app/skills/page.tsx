@@ -5,7 +5,7 @@ import { skills, tools } from "../data/data";
 const AboutPage: React.FC = (): JSX.Element => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh]">
+      <div className="flex flex-col md:flex-row justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh] shadow-2xl">
         <div className="py-32 px-28 md:w-1/3 text-white">
           <p className="text-6xl mb-4">Skillset</p>
           <p className="text-2xl">What can <span className="text-amber-400 underline">I</span> do?</p>

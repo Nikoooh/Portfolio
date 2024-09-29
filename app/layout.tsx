@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${alegreya.className} antialiased`}>
         <div className="flex flex-col h-screen justify-between">
           <div>
-            <nav className="bg-transparent absolute top-0 left-0 w-full z-10 text-white">
+            <nav className="absolute top-0 left-0 w-full z-10 text-white navGradient">
               <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-4xl whitespace-nowrap">Portfolio</span>

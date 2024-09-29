@@ -99,3 +99,8 @@ body {
   background: rgb(2,0,36);
   background: linear-gradient(258deg, rgba(2,0,36,0.5634628851540616) 0%, rgba(127,93,196,1) 21%, rgba(38,19,112,0.8295693277310925) 71%);
 }
+
+.navGradient {
+  background: rgb(2,0,36);
+  background: linear-gradient(258deg, rgba(2,0,36,0.3) 0%, rgba(127,93,196, 0.3) 21%, rgba(38,19,112, 0.3) 71%);
+}

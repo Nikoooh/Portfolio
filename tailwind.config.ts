@@ -14,6 +14,10 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-image': "url('/background/hero-image.png')",
+        'contact-page-hero': "url('/background/contact-page-hero.png')"
+      },
+      textDecorationThickness: {
+        '1em': '3px'
       }
     },
   },

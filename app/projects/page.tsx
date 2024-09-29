@@ -7,7 +7,7 @@ import { pokedex, pokedexTech, bloglist, bloglistTech, pathfinder, pathfinderTec
 const ProjectsPage: React.FC = (): JSX.Element => {
   return (
     <div className="flex flex-col pb-8">
-      <div className="flex flex-col md:flex-row justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh]">
+      <div className="flex flex-col md:flex-row justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh] shadow-2xl">
         <div className="py-32 px-20 md:w-1/3 text-white">
           <p className="text-6xl mb-4">Projects</p>
           <p className="text-2xl">Some apps i have made</p>

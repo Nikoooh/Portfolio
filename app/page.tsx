@@ -17,9 +17,9 @@ const HomePage: React.FC = (): JSX.Element => {
   
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 p-8 bg-hero-image bg-cover bg-top min-h-[100vh]">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 bg-hero-image bg-cover bg-top min-h-[100vh] shadow-2xl">
 
-        <div className="flex flex-col justify-center items-center py-32 w-fit">     
+        <div className="flex flex-col justify-center items-center w-fit">     
           <div className="p-16 w-fit text-white bg-zinc-800 bg-opacity-30 rounded-full shadow-2xl">
             <p className="text-6xl">Niko Toivanen</p>
             <div className="text-typing">
