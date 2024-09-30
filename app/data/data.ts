@@ -16,7 +16,7 @@ export const tools = [
   {name: 'VS Code', color: 'tailwindColor', logoSrc: '/techLogos/vscode.png'},
   {name: 'ChatGPT', color: 'chatgptColor', logoSrc: '/techLogos/chatgptlogo.png'},
   {name: 'Postman', color: 'postmanColor', logoSrc: '/techLogos/postmanlogo.png'},
-  {name: 'Github', color: 'nextColor', logoSrc: '/techlogos/githublogo.png'}
+  {name: 'Github', color: 'nextColor', logoSrc: '/techLogos/githublogo.png'}
 ]
 
 export const pokedex: AppInfo = {
@@ -59,7 +59,7 @@ export const bloglistTech = [
   {name: 'TypeScript', color: 'tsColor', logoSrc: '/techLogos/tslogo.png'},
   {name: 'React', color: 'reactColor', logoSrc: '/techLogos/reactlogo.png'},
   {name: 'Express', color: 'expressColor', logoSrc: '/techLogos/expresslogo.png'},
-  {name: 'MongoDB', color: 'mongodbColor', logoSrc: '/techLogos/mongodbLogo.png'}
+  {name: 'MongoDB', color: 'mongodbColor', logoSrc: '/techLogos/mongodblogo.png'}
 ]
 
 export const pathfinderTech = [
@@ -79,5 +79,5 @@ export const accountingAppTech = [
   {name: 'NextJS', color: 'nextColor', logoSrc: '/techLogos/nextjslogo.png'},
   {name: 'GraphQL', color: 'graphColor', logoSrc: '/techLogos/graphlogo.png'}, 
   {name: 'Tailwind', color: 'tailwindColor', logoSrc: '/techLogos/tailwindlogo.png'},
-  {name: 'MongoDB', color: 'mongodbColor', logoSrc: '/techLogos/mongodbLogo.png'}
+  {name: 'MongoDB', color: 'mongodbColor', logoSrc: '/techLogos/mongodblogo.png'}
 ]

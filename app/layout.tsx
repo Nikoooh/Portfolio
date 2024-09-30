@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
@@ -65,7 +64,9 @@ export default function RootLayout({
             <div className="flex flex-row justify-center gap-60 p-4 footerGradient text-white">
               <p className="text-xl">Developed by Niko Toivanen</p>
               <p className="text-xl">Copyright &copy; Niko Toivanen</p>
-              <Link href='https://github.com/Nikoooh' target="_"><img src="/techLogos/githubLogo.png" width={30} height='auto' alt="github logo"/></Link>
+              <Link href='https://github.com/Nikoooh' target="_">
+                <img src="/techLogos/githublogo.png" width={30} height='auto' alt="github logo"/>
+              </Link>
             </div>         
           </footer>
         </div>
