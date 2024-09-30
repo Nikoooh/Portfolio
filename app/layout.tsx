@@ -30,25 +30,25 @@ export default function RootLayout({
                 </a>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                   <ul className="flex gap-4">
-                    <Link href={'/'}>
+                    <Link href={'/'} prefetch={true}>
                       <li className="cursor-pointer text-xl hover:underline">
                         Home
                       </li>
                     </Link>
 
-                    <Link href={'/skills'}>
+                    <Link href={'/skills'} prefetch={true}>
                       <li className="cursor-pointer text-xl hover:underline">
                         Skills
                       </li>
                     </Link>
 
-                    <Link href={'/projects'}>
+                    <Link href={'/projects'} prefetch={true}>
                       <li className="cursor-pointer text-xl hover:underline">
                         Projects
                       </li>
                     </Link> 
 
-                    <Link href={'/contact'}>
+                    <Link href={'/contact'} prefetch={true}>
                       <li className="cursor-pointer text-xl hover:underline">
                         Contact
                       </li>
