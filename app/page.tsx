@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const HomePage: React.FC = (): JSX.Element => {
@@ -30,12 +29,11 @@ const HomePage: React.FC = (): JSX.Element => {
         <div className="sm:w-1/3" />
       </div>
 
-      <div className="flex md:flex-row flex-col justify-center p-8 pb-10 text-black">
-        <div className="p-14 sm:w-1/3">
-          <Image src={'/vectors/noimage.webp'} width={270} height={270} alt="Picture of Me" className="rounded-full"/>
-          <p>Image to be added</p>
+      <div className="flex md:flex-row flex-col justify-center space-around p-24 gap-10 text-black">
+        <div className="md:w-2/5 h-auto flex justify-center">
+          <img src={'/images/pic2.jpg'}  alt="Picture of Me" className="rounded-full max-w-80 max-h-80 shadow-xl" />
         </div>
-        <div className="py-14 sm:w-1/3">
+        <div className="md:w-1/3">
           <p className="text-4xl mb-4">Who am <a className="text-red-500 italic">I?</a></p>
           <div className="text-lg p-5">
             <p className="mb-3">I am 23-year old currently studying software development at South-Eastern Finland University of Applied Sciences (XAMK).</p>

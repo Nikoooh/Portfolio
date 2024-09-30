@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import colorClasses from "../styles/colorClasses";
 import Project from "./component/Project";
 import Link from "next/link";
@@ -13,7 +12,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
           <p className="text-2xl">Some apps i have made</p>
         </div>
         <div className="sm:py-20 md:w-1/3">
-          <img src={'/vectors/moon_developer-2.png'} width='400px' height="auto" alt="vector art of an programmer" />
+          <img src={'/images/moon_developer-2.png'} width='400px' height="auto" alt="vector art of an programmer" />
         </div>
       </div>
 

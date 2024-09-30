@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import colorClasses from "../styles/colorClasses";
 import { skills, tools } from "../data/data";
 
@@ -11,7 +10,7 @@ const AboutPage: React.FC = (): JSX.Element => {
           <p className="text-2xl">What can <span className="text-amber-400 underline">I</span> do?</p>
         </div>
         <div className="sm:py-20 md:w-1/3">
-          <img src={'/vectors/moon_developer.png'} width='400px' height="auto" alt="vector art of an programmer" />
+          <img src={'/images/moon_developer.png'} width='400px' height="auto" alt="vector art of an programmer" />
         </div>
       </div>
 

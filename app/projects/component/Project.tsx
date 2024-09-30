@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import colorClasses from "../../styles/colorClasses"
 import Link from "next/link"
 import { AppInfo } from "@/types/types"
