@@ -29,7 +29,7 @@ const HomePage: React.FC = (): JSX.Element => {
         <div className="sm:w-1/3" />
       </div>
 
-      <div className="flex md:flex-row flex-col justify-center space-around p-24 gap-10 text-black">
+      <div className="flex flex-row flex-wrap justify-center space-around p-2 sm:p-8 md:p-24 gap-10 text-black">
         <div className="md:w-2/5 h-auto flex justify-center">
           <img src={'/images/pic2.jpg'}  alt="Picture of Me" className="rounded-full max-w-80 max-h-80 shadow-xl" />
         </div>

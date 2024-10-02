@@ -2,7 +2,7 @@
 const ContactPage: React.FC = (): JSX.Element => {
   return ( 
     <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row justify-center gap-10 py-44 px-20 bg-cover bg-center bg-contact-page-hero min-h-[100vh] shadow-2xl text-white">
+      <div className="flex flex-row flex-wrap justify-center gap-10 py-44 px-20 bg-cover bg-center bg-contact-page-hero min-h-[100vh] shadow-2xl text-white">
         <div className="md:w-1/3">
           <p className="text-6xl">Contact</p>
         </div>

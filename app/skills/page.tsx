@@ -4,12 +4,12 @@ import { skills, tools } from "../data/data";
 const AboutPage: React.FC = (): JSX.Element => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh] shadow-2xl">
-        <div className="py-32 px-28 md:w-1/3 text-white">
+      <div className="flex flex-row flex-wrap justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh] shadow-2xl">
+        <div className="py-32 md:px-20 md:w-1/3 text-white">
           <p className="text-6xl mb-4">Skillset</p>
           <p className="text-2xl">What can <span className="text-amber-400 underline">I</span> do?</p>
         </div>
-        <div className="sm:py-20 md:w-1/3">
+        <div className="hidden md:block py-20 md:w-1/3">
           <img src={'/images/moon_developer.png'} width='400px' height="auto" alt="vector art of an programmer" />
         </div>
       </div>

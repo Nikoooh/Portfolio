@@ -5,13 +5,13 @@ import { pokedex, pokedexTech, bloglist, bloglistTech, pathfinder, pathfinderTec
 
 const ProjectsPage: React.FC = (): JSX.Element => {
   return (
-    <div className="flex flex-col pb-8">
-      <div className="flex flex-col md:flex-row justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh] shadow-2xl">
-        <div className="py-32 px-20 md:w-1/3 text-white">
+    <div className="flex flex-col">
+      <div className="flex flex-row flex-wrap justify-center gap-10 p-8 bg-cover bg-top bg-hero-image min-h-[72vh] shadow-2xl">
+        <div className="py-32 md:px-20 md:w-1/3 text-white">
           <p className="text-6xl mb-4">Projects</p>
           <p className="text-2xl">Some apps i have made</p>
         </div>
-        <div className="sm:py-20 md:w-1/3">
+        <div className="hidden md:block py-20 md:w-1/3">
           <img src={'/images/moon_developer-2.png'} width='400px' height="auto" alt="vector art of an programmer" />
         </div>
       </div>
@@ -21,7 +21,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
           <p className="text-4xl">Some apps i have made</p>
         </div>
 
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-12 p-8">    
+        <div className="flex flex-row flex-wrap justify-center gap-12 p-8">    
           <Project app={pokedex} tech={pokedexTech} imgSrc="/AppImages/pokedex.png" /> 
           <Project app={bloglist} tech={bloglistTech} imgSrc="/AppImages/bloglist.png"  />   
           <Project app={pathfinder} tech={pathfinderTech} imgSrc="/AppImages/pathfinder.png"/>  
@@ -33,7 +33,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
         <p className="text-4xl">More can be found on my personal <span className="underline text-blue-800"><Link href="https://github.com/Nikoooh" target="_">GitHub</Link></span></p>  
       </div>
 
-      <div className="flex flex-row justify-center gap-12">
+      <div className="flex flex-row flex-wrap justify-center gap-12 pl-8 pr-8">
         <div className="p-12 w-1/3">
           <p className="text-2xl">What i&apos;m currently working on</p>
         </div>

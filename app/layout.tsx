@@ -28,7 +28,7 @@ export default function RootLayout({
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-4xl whitespace-nowrap">Portfolio</span>
                 </a>
-                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                <div className="w-full sm:block sm:w-auto mt-4 sm:mt-0" id="navbar-default">
                   <ul className="flex gap-4">
                     <Link href={'/'} prefetch={true}>
                       <li className="cursor-pointer text-xl hover:underline">
@@ -64,7 +64,7 @@ export default function RootLayout({
           </div>
 
           <footer>
-            <div className="flex flex-row justify-center gap-60 p-4 footerGradient text-white">
+            <div className="flex flex-row flex-wrap justify-around space-between gap-8 p-4 footerGradient text-white">
               <p className="text-xl">Developed by Niko Toivanen</p>
               <p className="text-xl">Copyright &copy; Niko Toivanen</p>
               <Link href='https://github.com/Nikoooh' target="_">
