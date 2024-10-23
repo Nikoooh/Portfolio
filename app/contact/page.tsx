@@ -12,7 +12,7 @@ const ContactPage: React.FC = (): JSX.Element => {
               <p className="underline text-4xl">Want to get in touch with me?</p>
             </div>
             <div className="mt-6">
-              <p>Email: nikotoivanen1999@gmail.com</p>
+              <p>Email: niko.toivanen12@gmail.com</p>
               <p>Phone: +0458858081</p>  
             </div>   
             <div className="mt-6">
