@@ -37,14 +37,14 @@ const ProjectsPage: React.FC = (): JSX.Element => {
         <div className="p-12 w-1/3">
           <p className="text-2xl">What i&apos;m currently working on</p>
         </div>
-        <div className="flex flex-col p-12 w-2/5">
-          <div className="mb-5">
+        <div className="flex flex-col p-12 w-2/5 gap-5">
+          <div>
             <p className="text-2xl underline">Accounting App</p>
           </div>
-          <div className="flex justify-center ring mb-3 shadow-xl ">
-            <img src="/AppImages/noimage.png" alt="no image available picture" width='full' height='auto'/>
+          <div className="flex justify-center shadow-xl outline outline-3 outline-zinc-200">
+            <img src="/AppImages/accounting.png" alt="no image available picture" width='full' height='auto'/>
           </div>
-          <div className="flex flex-row flex-wrap gap-2 mb-8">         
+          <div className="flex flex-row flex-wrap gap-2 mb-2">         
             {accountingAppTech.map((skill, idx) => {
               const colorClass = colorClasses[skill.color];
               return (
@@ -62,9 +62,6 @@ const ProjectsPage: React.FC = (): JSX.Element => {
           <div>
             <p className="text-md">
               As my thesis project for school, i am working on a accounting application to be used by family homes in Finland.
-            </p>
-            <p className="text-md mt-3">
-              I have only recently started to work on this so no picture yet. Will be added later.
             </p>
           </div>
         </div>

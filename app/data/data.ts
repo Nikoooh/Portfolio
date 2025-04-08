@@ -9,14 +9,16 @@ export const skills = [
   {name: 'GraphQL', color: 'graphColor', logoSrc: '/techLogos/graphlogo.png'},
   {name: 'Material UI', color: 'tsColor', logoSrc: '/techLogos/muilogo.png'},
   {name: 'Tailwind', color: 'tailwindColor', logoSrc: '/techLogos/tailwindlogo.png'},
-  {name: 'MongoDB', color: 'mongodbColor', logoSrc: '/techLogos/mongodblogo.png'}
+  {name: 'MongoDB', color: 'mongodbColor', logoSrc: '/techLogos/mongodblogo.png'},
+  {name: 'PostgreSQL', color: 'tsColor', logoSrc: '/techLogos/postgre.png'}
 ]
 
 export const tools = [
   {name: 'VS Code', color: 'tailwindColor', logoSrc: '/techLogos/vscode.png'},
   {name: 'ChatGPT', color: 'chatgptColor', logoSrc: '/techLogos/chatgptlogo.png'},
   {name: 'Postman', color: 'postmanColor', logoSrc: '/techLogos/postmanlogo.png'},
-  {name: 'Github', color: 'nextColor', logoSrc: '/techLogos/githublogo.png'}
+  {name: 'Github', color: 'nextColor', logoSrc: '/techLogos/githublogo.png'},
+  {name: 'Supabase', color: 'mongodbColor', logoSrc: '/techLogos/supabase.png'}
 ]
 
 export const pokedex: AppInfo = {
@@ -77,7 +79,6 @@ export const accountingAppTech = [
   {name: 'TypeScript', color: 'tsColor', logoSrc: '/techLogos/tslogo.png'},
   {name: 'React', color: 'reactColor', logoSrc: '/techLogos/reactlogo.png'},
   {name: 'NextJS', color: 'nextColor', logoSrc: '/techLogos/nextjslogo.png'},
-  {name: 'GraphQL', color: 'graphColor', logoSrc: '/techLogos/graphlogo.png'}, 
   {name: 'Tailwind', color: 'tailwindColor', logoSrc: '/techLogos/tailwindlogo.png'},
-  {name: 'MongoDB', color: 'mongodbColor', logoSrc: '/techLogos/mongodblogo.png'}
+  {name: 'PostgreSQL', color: 'tsColor', logoSrc: '/techLogos/postgre.png'}
 ]
