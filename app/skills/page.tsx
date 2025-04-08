@@ -19,7 +19,7 @@ const AboutPage: React.FC = (): JSX.Element => {
           <div className="p-16 w-full">
             <p className="text-center text-4xl">Languages, Frameworks and Libraries i have experience with</p>
           </div>
-          <div className="py-16 px-60 w-full justify-center flex flex-row flex-wrap gap-6">     
+          <div className="py-16 px-60 md:px-40 sm:px-6 w-full justify-center flex flex-row flex-wrap gap-6">     
             {skills.map((skill, idx) => {
               const colorClass = colorClasses[skill.color];
               return (
@@ -41,7 +41,7 @@ const AboutPage: React.FC = (): JSX.Element => {
             <p className="text-center text-4xl">Tools</p>
           </div>
 
-          <div className="py-16 px-60 w-full justify-center flex flex-row flex-wrap gap-6">     
+          <div className="py-16 px-60 md:px-40 sm:px-6 w-full justify-center flex flex-row flex-wrap gap-6">     
           {tools.map((tool, idx) => {
               const colorClass = colorClasses[tool.color];
               return (
